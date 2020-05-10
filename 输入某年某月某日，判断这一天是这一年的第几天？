@@ -1,0 +1,16 @@
+print('请依次输入年、月、日，用回车间隔')
+year=int(input())
+month=int(input())
+day=int(input())
+flag=(year%4==0)
+num=(month-1)//2+1
+num1=(month-9)//2
+aim=0
+if(month<=8):
+    aim=num*31+day+(num-2)*30+28+flag
+else:
+    aim=243+flag+num1*30+num1*31+day
+if(aim==0):
+    print('输入有误')
+else:
+    print('{}/{}/{}是{}年的第{}天'.format(year,month,day,year,aim))
