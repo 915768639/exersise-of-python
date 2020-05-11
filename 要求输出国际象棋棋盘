@@ -1,4 +1,4 @@
-import sys
+import sysimport sys
 for i in range(0,8):
     for j in range(0,8):
         if((i+j)%2==0):
@@ -6,4 +6,4 @@ for i in range(0,8):
         else:
             sys.stdout.write(' '*2)
         if(j==7):
-            print('\n')
+            sys.stdout.write('\n')
